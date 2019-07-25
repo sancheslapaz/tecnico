@@ -1,0 +1,123 @@
+/*@charset "UTF-8";*/
+/********************************************************************
+ *****  CSS Documents                                           *****
+ ********************************************************************
+ *****  moz-linear-gradienter(red, green) - Firefox             *****
+ *****  webkit-linear-gradienter(red, green) - Safari, Chrome   *****
+ *****  o-linear-gradienter(red, green) - Opera                 *****
+ ********************************************************************/
+ /*   conteudo: #F2B705
+    cabecalho: #F29F05
+    equivalente: #D97904
+    pepagina: #733702
+    auxiliar: #401801 */
+/********************************************
+ *****              Monitor             *****
+ ***** 736 x 1360 px - Monitor 15.6"    *****
+ ***** 720 x 1280 px - Celular k9       *****
+ ***** 600 x 1024 px - Tablet 7"        *****
+ ********************************************/
+/************************
+ ***** Neutralidade *****
+ ************************/
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, html, body, header, nav, div, article, section, aside, footer{
+  margin: 0;
+  padding: 0;
+}
+html, body{
+    background-color: #FFFFFF;
+    font-family: Arial, "Times New Roman";
+}
+/**************************************
+ ***** TAG de Estrutura da página *****
+ **************************************/
+body{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 90%;
+    min-height: 7%;
+    margin: 0 auto;
+    padding: 2px 0 0x 0;
+    text-align: center;
+    color: lightsteelblue;
+    background-color: aquamarine;
+}
+nav{
+    margin: 5px 0 0 0;
+    padding: 20px 0;
+    border: 2px solid;
+    border-color: darkblue;
+    border-radius: 20px;
+}
+div{
+    width: 90%;
+    min-height: 65%;
+    margin: 0 auto;
+    background-color: brown;
+}
+footer{
+    width: 90%;
+    min-height: 4%;
+    margin: 0 auto;
+    background-color: burlywood;
+}
+/****************************************************
+ *****  Estrutura das DIV's do corpo da pagina  *****
+ ****************************************************/
+#wrapper{
+    width: 90%;
+    min-height: 65%;
+    margin: 0 auto;
+}
+#basica{
+    min-height: 25%;
+    background-color: lightblue;
+}
+#digital{
+    min-height: 25%;
+    background-color: lightcoral;
+}
+#silicio{
+    min-height: 25%;
+    background-color: lightcyan;
+}
+#instalacoes{
+    min-height: 25%;
+    background-color: lightgoldenrodyellow;
+}
+#comandos{
+    min-height: 25%;
+    background-color: lightgray;
+}
+#micro{
+    min-height: 25%;
+    background-color: lightseagreen;
+}
+/**************************************
+ ***** TAG de Estrutura de texto  *****
+ **************************************/
+h1{
+    font-size: 2em;
+    font-family: "Times New Roman";
+    font-style: italic;
+    text-shadow: 0.05em 0.05em 0.05em #000000;
+}
+a{
+    padding: 0 16px;
+    font-size: 1.2em;
+    font-style: italic;
+    text-decoration: none;
+    text-shadow: 0.09em 0.09em 0.09em #1289FF;
+}
+a:link{
+    color:darkblue;
+}
+a:visited{
+    color:darkmagenta;
+}
+a:hover{
+    color:darkgrey;
+    text-decoration:underline;
+}
