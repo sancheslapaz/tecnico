@@ -4,67 +4,1041 @@
         <title>Grandezas Elétricas</title>
         <meta charset="UTF-8">
         <meta name="description" content="Grandezas Elétricas">
-        <link type="text/css" rel="stylesheet" href="grandeza_e.css">                         <!-- Definição de estilo no arquivo CSS -->
+        <link type="text/css" rel="stylesheet" href="grandeza_e.css">       <!-- Definição de estilo no arquivo CSS -->
+        <link type="text/css" rel="stylesheet" href="math.css">             <!-- Definição de estilo no arquivo CSS -->
     </head>
-    <body>
+    <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false" onKeyDown='blockKeyCTRL(event);' >
         <!-- Cabeçalho -->
         <header>
-            <h1>Carga, Força, Campo, Tensão, Corrente e Potência Elétrica</h1>
+            <h1>Átomo, Carga, Força, Campo, Tensão, Corrente e Potência Elétrica</h1>
             <nav id="ginic">
+				<a href="#atomo" title="O Átomo">Átomo</a>
                 <a href="#carga" title="Carga Elétrica">Carga</a>
                 <a href="#forca" title="Força Elétrica">Força</a>
                 <a href="#campo" title="Campo Elétrico">Campo</a>
                 <a href="#tensao" title="Tensão Elétrica">Tensão</a>
                 <a href="#corrente" title="Corrente Elétrica">Corrente</a>
                 <a href="#potencia" title="Potência Elétrica">Potência</a>
-
+                <a href="#energia" title="Energia Elétrica">Energia</a>
+                <a href="#exercicio" title="Exercícios Propóstos">Exercícios</a>
             </nav>
         </header>
         <!-- Conteúdo -->
         <div>
             <article id="wrapper" >
+                <section><h1 id="h1_p">Apostila - Eletricidade Básica - José Antonio Sanches Lapaz</h1></section>
+                <h2>1 - Introdução</h2>
+                <p>
+                    &emsp;&emsp;Tudo a nossa volta está relacionado ao átomo, e a eletrônica, bem como a eletrotécnica, trabalham com a movimentação dos elétrons que por sua vez fazem parte do átomo, bem como os prótons e os nêutrons. Através dos elementos presentes na natureza e suas características podemos montar vários dispositivos eletrônicos e eletrotécnicos, estes, que vem a facilitar o funcionamento de equipamentos e dispositivos que nos auxiliam no controle dos elétrons. Só que estes elétrons estão desorganizados, ou seja, não possuem um caminho definido que possam seguir. Com isso queremos dizer que os elétrons, na natureza, seguem sentidos aleatórios e individuais. Na eletrônica e eletrotécnica trabalhamos estes sentidos, fazendo com que cada elétron fique alinhado no mesmo sentido, isto será estudado mais a frente na teoria de força e campo elétrico, tensão e corrente elétrica. 
+                </p>
+				<section id="atomo">
+                    <p id="sheet01"><br><br><br></p>
+                    <h2>1.1 - O Átomo</h2>
+                    <p>
+                        &emsp;&emsp;Vamos, agora, estudar a estrutura do átomo, pegaremos, para isso, como base para o nosso estudo o átomo mais simples da natureza, o hidrogênio. Como podemos observar na figura abaixo, o átomo de hidrogênio possui somente um elétron, um próton e um neutro.
+                    </p>
+                    <img src="img01.png" >
+                    <p>
+                        &emsp;&emsp;No modelo apresentado na anterior (Modelo atômico de Rutherford-Bohr, modelo de esferas), observamos que existem duas cargas colocadas ao centro e estas cargas estão estáveis no centro do átomo, havendo a necessidade de uma força muito grande para separá-las, e um elétron que circula ao redor destas cargas centrais. A carga do próton e do neutro são iguais, em massa, já o elétron tem massa correspondente a cerca de "1/1480" em relação a um próton, sendo assim cerca de 1840 elétrons caberiam dentro de um próton, para que tenhamos a ideia do tamanho da diferença entre os prótons e os elétrons, quando falamos de massa. Por ser mais leve o elétron tem melhor mobilidade e rapidez, e por estar situado na eletrosfera se torna mais fácil seu desligamento do núcleo, em relação ao próton que é mais pesado e está preso ao núcleo do átomo.
+                    </p>
+                    <!--<p id="sheet01"><br><br><br></p>
+                    <h1 id="h1_p">Apostila - Eletricidade Básica - José Antonio Sanches Lapaz</h1>-->
+                    <p>
+                        &emsp;&emsp;Em termos gerais podemos pensar que o próton tem a massa de um elefante, enquanto que o elétron tem a massa de um rato. No estudo da eletricidade o átomo de hidrogênio não nos valeria de muito pois possui um só elétron na eletrosfera, e a força que teríamos que imprimir para o deslocamento deste elétron de sua posição na eletrosfera teria de ser muito grande devido o mesmo estar muito próximo do núcleo.<br>
+                    </p>
+                    <p id="sheet01"><br><br><br><br>""<br></p>
+                    <h1 id="h1_p">Apostila - Eletricidade Básica - José Antonio Sanches Lapaz</h1>
+                    <p>
+                        &emsp;&emsp;Então por que devemos estudar o seu comportamento?<br>
+                        &emsp;&emsp;Em que isso nos auxiliará em nossos estudos?<br>
+                        &emsp;&emsp;Estudando a estrutura simples do átomo de hidrogênio podemos observar como todos os átomos dos diferentes   grupos da tabela periódica se comportam em seu interior, lembrando que quanto maior o átomo maior a quantidade de prótons, nêutrons, e elétrons em seu núcleo e eletrosfera. Assim, quanto mais distante do núcleo o elétron terá mais facilidade para se desprender do átomo e ficar livre em uma zona de condução que fará ele circular livre pelo corpo do material formado pelo conglomerado de vários átomos do mesmo material ou de materiais diferentes. Por isso, muitas vezes denominamos esses elétrons que têm a facilidade de se desprender do núcleo do átomo e passar da camada de valência para a de condução, de elétrons livres, pois eles se tornam livres para seguir o caminho que forem direcionados.
+                    </p>
+                    <p id="sheet01"><br><br><br></p>
+					<h2>1.2 – Ligações químicas</h2>
+                    <p>
+                        &emsp;&emsp;A estrutura básica de uma substância ou composto químico é formada por moléculas, e estas por sua vez são formadas pelas ligações químicas. Já as ligações químicas são divididas em três tipos: metálicas, iônicas e covalentes.
+                    </p>
+                    <p>
+                        &emsp;&emsp;A) Ligações Iônicas: São formadas pela atração de íons de cargas opostas, neste tipo de ligação um átomo cede um ou mais elétrons e o outro recebe um ou mais elétrons, a figura abaixo exemplifica o que foi explicado.
+                    </p>
+                    <img src="img02.png" >
+                    <p>
+                        &emsp;&emsp;B) Ligações Covalentes: São formadas pelo compartilhamento de elétrons, neste tipo de ligação dois ou mais átomos compartilham os elétrons que estão situados em sua última camada da eletrosfera entre si. Isto torna o átomo estável eletricamente, a figura abaixo exemplifica o que foi explicado.
+                    </p>
+                    <p id="sheet01">
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>""<br>
+                    </p>
+                    <h1 id="h1_p">Apostila - Eletricidade Básica - José Antonio Sanches Lapaz</h1>
+                    <img src="img03.png" class="q4_img" ><br>
+                    <!--<section>
+                        <p id="sheet01"><br></p>
+                        <h1 id="h1_p">Apostila - Eletricidade Básica - José Antonio Sanches Lapaz</h1>
+                    </section>-->
+                    <p>
+                        &emsp;&emsp;C) Ligações Metálicas: As ligações metálicas, como podemos observa pelo nome, ocorrem entre metais, ou seja, átomos de alta eletropositividade. A união destes átomos cria um material cristalino de formas variadas. Em alguns cristais o elétron se encontra preso, não tendo liberdade de movimento, já em outros cristais os elétrons encontram uma facilidade de movimentar-se pelo corpo formado pela estrutura do cristal. Esta mobilidade dos elétrons que estão passeando pelo corpo metálico é o que mostra a diferença entre um corpo que conduz eletricidade e um corpo isolante que não dispõem de uma mobilidade de elétrons como os metais, não que um corpo isolante não possa conduzir eletricidade, porém, para que esse conduza a força aplicada ao mesmo deve ser grande o suficiente para que os elétrons que estão fortemente presos a estrutura do corpo ganhem velocidade e se movimentem. Já segundo a teoria da nuvem eletrônica certos átomos do metal têm desprendido de suas últimas camadas alguns elétrons e esses elétrons ficam vagando entre os átomos do material cristalino do metal, que por sua vez funcionam como um certo tipo de cola elétrica que mantém os cátions do metal, formados pelo desprendimento desses elétrons, unidos a esses elétrons que ficam vagando pelo material cristalino, a figura abaixo exemplifica o que foi explicado.
+                    </p>
+                    <img src="img04.png" ><br>					
+                    <a href="#ginic" title="Cabeçalho da Página">Topo</a>
+                </section>
                 <section id="carga">
-                    <h2>Carga Elétrica</h2>
-                        <p>&nbsp; &nbsp; &nbsp; A carga elétrica dos máteriais já é estudada desde os primórdios da humanidade, tendo seu inicio de estudo mais aprofundado com os Gregos que esregavam as pedras de âmbar entre si para verificar a carga estática apresentada no momento de sua fricção.<br>
-                        &nbsp; &nbsp; &nbsp; A carga elétrica dos máteriais já é estudada desde os primórdios da humanidade, tendo seu inicio de estudo mais aprofundado com os Gregos que esregavam as pedras de âmbar entre si para verificar a carga estática apresentada no momento de sua fricção.<br>
-                        &nbsp; &nbsp; &nbsp; A carga elétrica dos máteriais já é estudada desde os primórdios da humanidade, tendo seu inicio de estudo mais aprofundado com os Gregos que esregavam as pedras de âmbar entre si para verificar a carga estática apresentada no momento de sua fricção.<br>
-                        &nbsp; &nbsp; &nbsp; A carga elétrica dos máteriais já é estudada desde os primórdios da humanidade, tendo seu inicio de estudo mais aprofundado com os Gregos que esregavam as pedras de âmbar entre si para verificar a carga estática apresentada no momento de sua fricção.<br>
-                        &nbsp; &nbsp; &nbsp; A carga elétrica dos máteriais já é estudada desde os primórdios da humanidade, tendo seu inicio de estudo mais aprofundado com os Gregos que esregavam as pedras de âmbar entre si para verificar a carga estática apresentada no momento de sua fricção.<br>
-                        &nbsp; &nbsp; &nbsp; A carga elétrica dos máteriais já é estudada desde os primórdios da humanidade, tendo seu inicio de estudo mais aprofundado com os Gregos que esregavam as pedras de âmbar entre si para verificar a carga estática apresentada no momento de sua fricção.<br>
-                        &nbsp; &nbsp; &nbsp; A carga elétrica dos máteriais já é estudada desde os primórdios da humanidade, tendo seu inicio de estudo mais aprofundado com os Gregos que esregavam as pedras de âmbar entre si para verificar a carga estática apresentada no momento de sua fricção.<br>
-                        &nbsp; &nbsp; &nbsp; A carga elétrica dos máteriais já é estudada desde os primórdios da humanidade, tendo seu inicio de estudo mais aprofundado com os Gregos que esregavam as pedras de âmbar entre si para verificar a carga estática apresentada no momento de sua fricção.<br>
-                        &nbsp; &nbsp; &nbsp; A carga elétrica dos máteriais já é estudada desde os primórdios da humanidade, tendo seu inicio de estudo mais aprofundado com os Gregos que esregavam as pedras de âmbar entre si para verificar a carga estática apresentada no momento de sua fricção.<br>
-                        &nbsp; &nbsp; &nbsp; A carga elétrica dos máteriais já é estudada desde os primórdios da humanidade, tendo seu inicio de estudo mais aprofundado com os Gregos que esregavam as pedras de âmbar entre si para verificar a carga estática apresentada no momento de sua fricção.<br>
-                        &nbsp; &nbsp; &nbsp; A carga elétrica dos máteriais já é estudada desde os primórdios da humanidade, tendo seu inicio de estudo mais aprofundado com os Gregos que esregavam as pedras de âmbar entre si para verificar a carga estática apresentada no momento de sua fricção.<br>
-                        &nbsp; &nbsp; &nbsp; A carga elétrica dos máteriais já é estudada desde os primórdios da humanidade, tendo seu inicio de estudo mais aprofundado com os Gregos que esregavam as pedras de âmbar entre si para verificar a carga estática apresentada no momento de sua fricção.<br>
-                        </p>
-                        <a href="#ginic" title="Cabeçalho da Página">Cabeçalho</a>
+                    <p id="sheet01">
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>""<br>
+                    </p>
+                    <h1 id="h1_p">Apostila - Eletricidade Básica - José Antonio Sanches Lapaz</h1>
+                    <h2>1.3 - Carga Elétrica</h2>
+                    <p>
+                        &emsp;&emsp;Um elétron possui uma carga elétrica que tem seu valor em módulo de aproximadamente 1,6x10<sup>-19</sup> coulomb's e sua representação é dada pela letra “e”. Devemos nos lembrar que a carga do próton e do elétron tem o mesmo valor em módulo, sendo adotado o valor negativo para o elétron e o positivo para o próton.<br>
+                        No elétron as linhas entram segundo convenção:
+                    </p>
+                    <img src="img05.png" class="q1_img">
+                    <p>
+                        &emsp;&emsp;E sua carga é:	1e<sup>-</sup> = -1,602176487x10<sup>-19</sup> C.<br>
+                        &emsp;&emsp;No próton as linhas saem segundo convenção:
+                    </p>
+                    <img src="img06.png" class="q1_img">
+                    <p>
+                        &emsp;&emsp;E sua carga é:	1p<sup>+</sup> = |1e<sup>-</sup>| = 1,602176487x10<sup>-19</sup> C.<br>
+                        &emsp;&emsp;Já o valor de um coulomb em elétrons é:<br>
+                        &emsp;&emsp;1C = 6,241509647x10<sup>18</sup> e<sup>-</sup><br>
+                        &emsp;&emsp;Como sabemos as cargas de mesmo sinal se repelem devido as linhas de campo elétrico terem o mesmo sentido de direção, como mostrado nas figuras abaixo:<br>
+                        &emsp;&emsp;Então para duas cargas carregadas negativamente, por ambas terem linha de campo entrando, e devido a este fato as cargas negativas se repelem, pois não existe conexão entre suas linhas de campo elétrico. Isto é similar a um ímã, se colocarmos dois ímãs aproximando os pólos sul dos mesmos, notamos que há repulsão devido as linhas de campo magnético entrarem no polo sul dos ímãs.
+                    </p>
+                    <img src="img07.png" class="q2_img">
+                    <p>
+                        &emsp;&emsp;Então para duas cargas carregadas positivamente, por ambas terem linha de campo saindo, e devido a este fato as cargas positivas se repelem, pois não existe conexão entre suas linhas de campo elétrico. Isto é similar a um ímã, se colocarmos dois ímãs aproximando os pólos norte dos mesmos, notamos que há repulsão devido as linhas de campo magnético saírem no polo norte dos ímãs.
+                    </p>
+                    <img src="img08.png" class="q2_img">
+                    <p id="sheet01"><br><br><br><br>""<br></p>
+                    <h1 id="h1_p">Apostila - Eletricidade Básica - José Antonio Sanches Lapaz</h1>
+                    <p>
+                        &emsp;&emsp;Já para cargas de sinais contrários, notamos que as linhas de campo saem das carga positivas e entram nas cargas negativas, devido a isto existe a atração entre as cargas como podemos observar na figura abaixo. Então para duas cargas carregadas positiva e negativamente, por ambas terem linha de campo distintas, cargas se atraem, pois existe conexão entre suas linhas de campo elétrico. Isto é similar a um ímã, se colocarmos dois ímãs aproximando os polos norte e sul dos mesmos, notamos que há atração devido as linhas de campo magnético saírem no polo norte de um ímã e entrarem no polo sul do outro ímã.
+                    </p>
+                    <img src="img09.png" class="q2_img">
+					<p id="sheet01"><br><br><br></p>
+                    <h2>1.3.1 - Exercícios resolvidos:</h2>
+                    <p>
+                        &emsp;&emsp;1) Calcule a quantidade de elétrons a ser inserido a um corpo neutro para que o mesmo, depois possua uma carga de -24μC.
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <msemantic>
+                                <mtable>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mn>1</mn><msup><mo>e</mo><mo>-</mo></msup><mspace></mspace><mspace></mspace>&rArr;<mspace></mspace><mspace></mspace><mspace></mspace><mn>1,6</mn><mspace></mspace><mo>x</mo><mspace></mspace><msup><mn>10</mn><mn>-19</mn></msup><mspace></mspace><mo>C</mo></mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mo>z</mo><msup><mo>e</mo><mo>-</mo></msup><mspace></mspace><mspace></mspace>&rArr;<mspace></mspace><mspace></mspace><mspace></mspace><mn>24</mn><mspace></mspace><mo>x</mo><mspace></mspace><msup><mn>10</mn><mn>-6</mn></msup><mspace></mspace><mo>C</mo></mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mo>z</mo><mspace></mspace><mo>.</mo><mspace></mspace><mn>1,6</mn><mspace></mspace><mo>x</mo><mspace></mspace><msup><mn>10</mn><mn>-19</mn></msup><mspace></mspace><mo>=</mo><mspace></mspace><mn>1</mn><mspace></mspace><mo>.</mo><mspace></mspace><mn>24</mn><mspace></mspace><mo>x</mo><mspace></mspace><msup><mn>10</mn><mn>-6</mn></msup></mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mo>z</mo><mspace></mspace><mo>=</mo><mspace></mspace>
+                                                <mfrac>
+                                                    <mrow><mn>24</mn><mspace></mspace><mo>x</mo><mspace></mspace><msup><mn>10</mn><mn>-6</mn></msup></mrow>
+                                                    <mrow><mn>1,6</mn><mspace></mspace><mo>x</mo><mspace></mspace><msup><mn>10</mn><mn>-19</mn></msup></mrow>
+                                                </mfrac>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mo>z</mo><mspace></mspace><mo>=</mo><mspace></mspace>
+                                                <mn>150</mn><mspace></mspace><mo>x</mo><mspace></mspace><msup><mn>10</mn><mn>12</mn></msup><mspace></mspace><mo>elétrons</mo>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow>
+                                                <mo>z</mo><mspace></mspace><mo>=</mo><mspace></mspace><mn>150</mn><mspace></mspace><mo>T</mo><msup><mo>e</mo><mo>-</mo></msup>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                </mtable>
+                            </msemantic>
+                        </math>
+                    </p>
+                    <p>
+                        &emsp;&emsp;2) Calcule a carga elétrica de 1500 elétrons?
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <msemantic>
+                                <mtable>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mn>1</mn><msup><mo>e</mo><mo>-</mo></msup><mspace></mspace><mspace></mspace>&rArr;<mspace></mspace><mspace></mspace><mspace></mspace><mn>1,6</mn><mspace></mspace><mo>x</mo><mspace></mspace><msup><mn>10</mn><mn>-19</mn></msup><mspace></mspace><mo>C</mo></mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mn>1500</mn><msup><mo>e</mo><mo>-</mo></msup><mspace></mspace><mspace></mspace>&rArr;<mspace></mspace><mspace></mspace><mspace></mspace><mo>z</mo><mspace></mspace><mo>C</mo></mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mo>z</mo><mspace></mspace><mo>.</mo><mspace></mspace><mn>1</mn><mspace></mspace><mo>=</mo><mspace></mspace><mn>1,5</mn><mspace></mspace><mo>x</mo><mspace></mspace><msup><mn>10</mn><mn>3</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace><mn>1,6</mn><mspace></mspace><mo>x</mo><mspace></mspace><msup><mn>10</mn><mn>-19</mn></msup></mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mo>z</mo><mspace></mspace><mo>=</mo><mspace></mspace>
+                                                <mn>240</mn><mspace></mspace><mo>x</mo><mspace></mspace><msup><mn>10</mn><mn>-18</mn></msup><mspace></mspace><mo>C</mo>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow>
+                                                <mo>z</mo><mspace></mspace><mo>=</mo><mspace></mspace><mn>240</mn><mspace></mspace><mo>aC</mo>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                </mtable>
+                            </msemantic>
+                        </math>
+                    </p>
+                    <a href="#ginic" title="Cabeçalho da Página">Topo</a>
                 </section>
                 <section id="forca">
-                    <h2>Força Elétrica</h2>
-                    <a href="#ginic" title="Cabeçalho da Página">Cabeçalho</a>
+                    <p id="sheet01"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>""<br></p>
+                    <h1 id="h1_p">Apostila - Eletricidade Básica - José Antonio Sanches Lapaz</h1>
+                    <h2>1.4 - Força Elétrica</h2>
+                    <p>
+                        &emsp;&emsp;Tanto a força entre cargas negativas e positivas que vem a ser de atração, bem como a força entre as cargas positivas e a força entre cargas negativas que vem a ser de repulsão são calculadas em módulo, isto quer dizer que não se leva em conta se a carga e negativa ou positiva para o seu cáculo, sendo seu valor sempre positivo, ou seja, em módulo. Há também a distância que interfere na força, isto quer dizer, quanto maior a distância menor a força entre as cargas e quanto menor a distância maior a força entre as cargas. Por experimentos comprovamos que a força cai com o quadrado da distância, ou seja, fica menor com o quadrado da distância.
+                    </p>
+                    <img src="img10.png" class="q2_img">
+                    <p>
+                        &emsp;&emsp;Além disso existe a constante de ajuste, ou seja, a constante de proporcionalidade do meio.<br>
+                        &emsp;&emsp;K = constante de proporcionalidade do meio, no vácuo, igual a:
+                        <math id="equation" xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <msemantics>
+                                <mrow><mi>K</mi><mspace></mspace><mo>=</mo><mspace></mspace>
+                                    <mrow><mn>9</mn><mo>x</mo><msup><mn>10</mn><mn>9</mn></msup><mspace></mspace></mrow>
+                                    <mo>(</mo><mi>N</mi><mspace></mspace><mo>*</mo><mspace></mspace>
+                                    <mfrac>
+                                        <mrow><msup><mi>m</mi><mn>2</mn></msup></mrow>
+                                        <mrow><msup><mi>C</mi><mn>2</mn></msup></mrow>
+                                    </mfrac>
+                                    <mo>)</mo>
+                                </mrow><br>
+                            </msemantics>
+                        </math>
+                        &emsp;&emsp;Assim temos:<br>
+                        &emsp;&emsp;Q<sub>1</sub> e Q<sub>2</sub> = intensidade de carga elétrica dada em Coulomb (C);<br>
+                        &emsp;&emsp;d = distância entre as cargas dada em metro (m);<br>
+                        &emsp;&emsp;F = intensidade de força elétrica dada em Newtons (N);<br>
+                        <math id="equation" xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <msemantics>
+                                <mrow><mi>F</mi><mspace></mspace><mo>=</mo><mspace></mspace>
+                                    <mrow><mi>K</mi><mspace></mspace><mo>x</mo><mspace></mspace></mrow>
+                                    <mfrac>
+                                        <mrow><msub><mi>Q</mi><mn>1</mn></msub><mspace></mspace><mo>x</mo><mspace></mspace><msub><mi>Q</mi><mn>2</mn></msub></mrow>
+                                        <mrow><msup><mi>d</mi><mn>2</mn></msup></mrow>
+                                    </mfrac>
+                                    <mrow><mspace></mspace><mo>(</mo><mi>N</mi><mo>)</mo></mrow>
+                                </mrow><br>
+                            </msemantics>
+                        </math>
+                    </p>
+ 					<h2>1.4.1 - Exercícios resolvidos:</h2>
+                    <p>
+                        &emsp;&emsp;1) Duas cargas postas a uma distância de 1m uma da outra e com um valor de intensidade de Q<sub>1</sub> = 64μC e Q<sub>2</sub> = 50μC. Pede-se o valor da intensidade de força elétrica do sistema.
+                    </p>
+                    <img src="exerc03.png" class="q2_img">
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                        <msemantics>
+                            <mtable>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>9</mn><mo>x</mo><msup><mn>10</mn><mn>9</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace>
+                                            <mfrac>
+                                                <mrow><mn>64</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace><mn>50</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup></mrow>
+                                                <mrow><msup><mrow><mo>(</mo><mi>1</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow>
+                                            </mfrac>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                                <mtr><mtd><mspace></mspace></mtd></mtr>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>9</mn><mo>x</mo><msup><mn>10</mn><mn>9</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace>
+                                            <mfrac>
+                                                <mrow><mn>3,2</mn><mo>x</mo><msup><mn>10</mn><mn>-9</mn></msup></mrow>
+                                                <mrow><mn>1</mn></mrow>
+                                            </mfrac>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                                <mtr><mtd><mspace></mspace></mtd></mtr>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>9</mn><mo>x</mo><msup><mn>10</mn><mn>9</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace><mn>3,2</mn><mo>x</mo><msup><mn>10</mn><mn>-9</mn></msup>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                                <mtr><mtd><mspace></mspace></mtd></mtr>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>28,8</mn><mspace></mspace><mo>N</mo>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                            </mtable>
+                        </msemantics>
+                    </math>
+                    <p id="sheet01"><br><br>""<br></p>
+                    <h1 id="h1_p">Apostila - Eletricidade Básica - José Antonio Sanches Lapaz</h1>
+                    <p>
+                        &emsp;&emsp;2) Duas cargas postas a uma distância de 100mm uma da outra e com um valor de intensidade de  Q<sub>1</sub> = 64μC e Q<sub>2</sub> = 50μC. Pede-se o valor da intensidade de força elétrica do sistema.
+                    </p>
+                    <img src="exerc04.png" class="q2_img">
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                        <msemantics>
+                            <mtable>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>9</mn><mo>x</mo><msup><mn>10</mn><mn>9</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace>
+                                            <mfrac>
+                                                <mrow><mn>64</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace><mn>50</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup></mrow>
+                                                <mrow><msup><mrow><mo>(</mo><mn>100</mn><mo>x</mo><msup><mn>10</mn><mn>-3</mn></msup><mo>)</mo></mrow><mn>2</mn></msup></mrow>
+                                            </mfrac>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                                <mtr><mtd><mspace></mspace></mtd></mtr>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>9</mn><mo>x</mo><msup><mn>10</mn><mn>9</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace>
+                                            <mfrac>
+                                                <mrow><mn>3,2</mn><mo>x</mo><msup><mn>10</mn><mn>-9</mn></msup></mrow>
+                                                <mrow><mn>10</mn><mo>x</mo><msup><mn>10</mn><mn>-3</mn></msup></mrow>
+                                            </mfrac>
+                                        </mrow>
+                                    </mtd>
+                                </mtr> 
+                                <mtr><mtd><mspace></mspace></mtd></mtr>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>9</mn><mo>x</mo><msup><mn>10</mn><mn>9</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace><mn>320</mn><mo>x</mo><msup><mn>10</mn><mn>-9</mn></msup>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                                <mtr><mtd><mspace></mspace></mtd></mtr>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>2,88</mn><mo>x</mo><msup><mn>10</mn><mn>3</mn></msup><mspace></mspace><mo>N</mo>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                                <mtr><mtd><mspace></mspace></mtd></mtr>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>2,88</mn><mspace></mspace><mo>kN</mo>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                            </mtable>
+                        </msemantics>
+                    </math>
+                    <p>
+                        &emsp;&emsp;3) Duas cargas postas a uma distância de 10mm uma da outra e com um valor de intensidade de Q<sub>1</sub> = 64μC e Q<sub>2</sub> = 50μC. Pede-se o valor da intensidade de força elétrica do sistema.
+                    </p>
+                    <img src="exerc05.png" class="q2_img">
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                        <msemantics>
+                            <mtable>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>9</mn><mo>x</mo><msup><mn>10</mn><mn>9</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace>
+                                            <mfrac>
+                                                <mrow><mn>64</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace><mn>50</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup></mrow>
+                                                <mrow><msup><mrow><mo>(</mo><mn>10</mn><mo>x</mo><msup><mn>10</mn><mn>-3</mn></msup><mo>)</mo></mrow><mn>2</mn></msup></mrow>
+                                            </mfrac>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                                <mtr><mtd><mspace></mspace></mtd></mtr>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>9</mn><mo>x</mo><msup><mn>10</mn><mn>9</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace>
+                                            <mfrac>
+                                                <mrow><mn>3,2</mn><mo>x</mo><msup><mn>10</mn><mn>-9</mn></msup></mrow>
+                                                <mrow><mn>100</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup></mrow>
+                                            </mfrac>
+                                        </mrow>
+                                    </mtd>
+                                </mtr> 
+                                <mtr><mtd><mspace></mspace></mtd></mtr>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>9</mn><mo>x</mo><msup><mn>10</mn><mn>9</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace><mn>32</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                                <mtr><mtd><mspace></mspace></mtd></mtr>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>288</mn><mo>x</mo><msup><mn>10</mn><mn>3</mn></msup><mspace></mspace><mo>N</mo>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                                <mtr><mtd><mspace></mspace></mtd></mtr>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>288</mn><mspace></mspace><mo>kN</mo>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                            </mtable>
+                        </msemantics>
+                    </math>
+                    <p id="sheet01">
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>""<br>
+                    </p>
+                    <h1 id="h1_p">Apostila - Eletricidade Básica - José Antonio Sanches Lapaz</h1>
+                    <p>
+                        &emsp;&emsp;4) Duas cargas postas a uma distância de 1mm uma da outra e com um valor de intensidade de Q<sub>1</sub> = 64μC e Q<sub>2</sub> = 50μC. Pede-se o valor da intensidade de força elétrica do sistema.
+                    </p>
+                    <img src="exerc06.png" class="q2_img">
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                        <msemantics>
+                            <mtable>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>9</mn><mo>x</mo><msup><mn>10</mn><mn>9</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace>
+                                            <mfrac>
+                                                <mrow><mn>64</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace><mn>50</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup></mrow>
+                                                <mrow><msup><mrow><mo>(</mo><mn>1</mn><mo>x</mo><msup><mn>10</mn><mn>-3</mn></msup><mo>)</mo></mrow><mn>2</mn></msup></mrow>
+                                            </mfrac>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                                <mtr><mtd><mspace></mspace></mtd></mtr>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>9</mn><mo>x</mo><msup><mn>10</mn><mn>9</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace>
+                                            <mfrac>
+                                                <mrow><mn>3,2</mn><mo>x</mo><msup><mn>10</mn><mn>-9</mn></msup></mrow>
+                                                <mrow><mn>1</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup></mrow>
+                                            </mfrac>
+                                        </mrow>
+                                    </mtd>
+                                </mtr> 
+                                <mtr><mtd><mspace></mspace></mtd></mtr>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>9</mn><mo>x</mo><msup><mn>10</mn><mn>9</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace><mn>3,2</mn><mo>x</mo><msup><mn>10</mn><mn>-3</mn></msup>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                                <mtr><mtd><mspace></mspace></mtd></mtr>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>28,8</mn><mo>x</mo><msup><mn>10</mn><mn>6</mn></msup><mspace></mspace><mo>N</mo>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                                <mtr><mtd><mspace></mspace></mtd></mtr>
+                                <mtr>
+                                    <mtd>
+                                        <mrow>
+                                            <msub><mi>F</mi><mi>R</mi></msub><mspace></mspace><mo>=</mo><mspace></mspace><mn>28,8</mn><mspace></mspace><mo>MN</mo>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                            </mtable>
+                        </msemantics>
+                    </math>
+                    <a href="#ginic" title="Cabeçalho da Página">Topo</a>
                 </section>
                 <section id="campo">
-                    <h2>Campo Elétrica</h2>
-                    <a href="#ginic" title="Cabeçalho da Página">Cabeçalho</a>
+                    <p id="sheet01"><br><br><br></p>
+                    <h2>1.5 - Campo Elétrico</h2>
+                    <p>
+                        &emsp;&emsp;Uma vez definida a carga elétrica e a força elétrica nos falta, somente, a definição do campo elétrico e esta definição é de fácil entendimento porque o campo elétrico é o espaço onde estas cargas e esta força estão interagindo.
+                    </p>
+                    <img src="img12.png" class="q3_img">
+                    <p>
+                        &emsp;&emsp;Para definição de campo elétrico colocamos uma carga “q” ao centro, ou seja, isolamos uma carga “q” como sendo uma carga de teste e a força que aparece entre a carga “q” e uma carga “Q” é a força de teste, e dividindo esta força pela carga “q” encontramos o campo que interage neste sistema.<br>
+                        &emsp;&emsp;Assim temos:
+                        <math id="equation" xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <msemantics>
+                                <mrow><mi>E</mi><mspace></mspace><mo>=</mo><mspace></mspace>
+                                    <mrow>
+                                        <mfrac><mi>F</mi><mi>q</mi></mfrac><mspace></mspace><mo>=</mo><mspace></mspace>
+                                    </mrow>
+                                    <mrow><mi>K</mi><mspace></mspace><mo>x</mo><mspace></mspace>
+                                    <mfrac>
+                                        <mrow><mi>Q</mi></mrow>
+                                        <mrow><msup><mi>d</mi><mn>2</mn></msup></mrow>
+                                    </mfrac>
+                                    </mrow>
+                                    <mrow><mspace></mspace><mo>(</mo><mfrac><mi>V</mi><mi>m</mi></mfrac><mo>)</mo></mrow>
+                                </mrow><br>
+                            </msemantics>
+                        </math>
+                    </p>
+                    <a href="#ginic" title="Cabeçalho da Página">Topo</a>
                 </section>
                 <section id="tensao">
-                    <h2>Tensão Elétrica</h2>
-                    <a href="#ginic" title="Cabeçalho da Página">Cabeçalho</a>
+                    <p id="sheet01"><br><br><br><br><br><br><br>""<br></p>
+                    <h1 id="h1_p">Apostila - Eletricidade Básica - José Antonio Sanches Lapaz</h1>
+                    <h2>1.6 - Tensão Elétrica</h2>
+                    <p>
+                        &emsp;&emsp;O potencial elétrico, tensão elétrica ou diferença de potencial, em termos físicos é a força aplicada a uma carga quando esta se encontra sujeita a um campo elétrico. A diferença de potencial é expressa em Volts (V) e é dada pela expressão abaixo:
+                        <math id="equation" xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <msemantics>
+                                <mrow><mi>V</mi><mspace></mspace><mo>=</mo><mspace></mspace>
+                                    <mrow>
+                                        <mi>E</mi><mspace></mspace><mo>x</mo><mspace></mspace><mi>d</mi><mspace></mspace><mo>=</mo><mspace></mspace>
+                                    </mrow>
+                                    <mrow><mi>K</mi><mspace></mspace><mo>x</mo><mspace></mspace>
+                                        <mfrac>
+                                            <mrow><mi>Q</mi></mrow>
+                                            <mrow><mi>d</mi></mrow>
+                                        </mfrac>
+                                    </mrow>
+                                    <mrow><mspace></mspace><mo>(</mo><mi>V</mi><mo>)</mo></mrow>
+                                </mrow><br>
+                            </msemantics>
+                        </math>
+                        A diferença de potencial pode ser positiva ou negativa, dependendo somente da carga elétrica envolvida, devido a isto a diferença de potencial é uma grandeza escalar, ou seja, tem uma intensidade definida.
+                        Assim, o caminho percorrido pela carga Q do seu ponto inicial a qualquer ponto de maior potencial V1, V2 , V3, V4 e V5 é a tensão elétrica ou diferença de potencial.
+                    </p>
+                    <img src="img13.png" class="q3_img">
+                    <p id="sheet01"><br><br><br></p>
+                    <h2>1.6.1 - Exercícios resolvidos:</h2>
+                    <p>
+                        1) Calcule o valor da diferença de potencial de uma carga, de -250 &micro;C, posicionada a uma distância de 500 mm de um campo elétrico aplicado a um fio de cobre.
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <msemantics>
+                                <mtable>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mi>V</mi><mspace></mspace><mo>=</mo><mspace></mspace>
+                                                <mrow><mi>K</mi><mspace></mspace><mo>.</mo><mspace></mspace></mrow>
+                                                 <mfrac>
+                                                    <mrow><mi>Q</mi></mrow>
+                                                    <mrow><mi>d</mi></mrow>
+                                                </mfrac>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mi>V</mi><mspace></mspace><mo>=</mo><mspace></mspace>
+                                                <mrow><mn>9</mn><mo>x</mo><msup><mn>10</mn><mn>9</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace></mrow>
+                                                 <mfrac>
+                                                    <mrow><mn>-250</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup></mrow>
+                                                    <mrow><mn>500</mn><mo>x</mo><msup><mn>10</mn><mn>-3</mn></msup></mrow>
+                                                </mfrac>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mi>V</mi><mspace></mspace><mo>=</mo><mspace></mspace>
+                                                <mrow><mn>9</mn><mo>x</mo><msup><mn>10</mn><mn>9</mn></msup><mspace></mspace><mo>.</mo><mspace></mspace><mn>-500</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup></mrow>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow>
+                                                <mi>V</mi><mspace></mspace><mo>=</mo><mspace></mspace>
+                                                <mrow><mn>-4,5</mn><mo>x</mo><msup><mn>10</mn><mn>6</mn></msup></mrow>
+                                                <mspace></mspace><mo>V</mo>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow>
+                                                <mi>V</mi><mspace></mspace><mo>=</mo><mspace></mspace><mn>-4,5</mn><mspace></mspace><mo>MV</mo>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                </mtable>
+                            </msemantics>
+                        </math><br>
+                    </p>
+                    <a href="#ginic" title="Cabeçalho da Página">Topo</a>
                 </section>
                 <section id="corrente">
-                    <h2>Corrente Elétrica</h2>
-                    <a href="#ginic" title="Cabeçalho da Página">Cabeçalho</a>
+                    <p id="sheet01"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>""<br></p>
+                    <h1 id="h1_p">Apostila - Eletricidade Básica - José Antonio Sanches Lapaz</h1>
+                    <h2>1.7 - Corrente Elétrica</h2>
+                    <p>
+                        &emsp;&emsp;Já corrente elétrica está associada por sua vez ao movimento de cargas elétricas durante um determinado período de tempo.
+                    </p>
+                    <img src="img15.png" class="q3_img">
+                    <p>    
+                        Assim se aplicarmos uma diferença de potencial em um condutor elétrico, essa diferença de potencial organizará os elétrons ou as cargas elétricas envolvidas no condutor e isso nos dará um fluxo de elétrons no sistema perpendicular ao sentido do campo elétrico.
+                    </p>
+                    <img src="img16.png" class="q3_img">
+                    <p>    
+                        A corrente elétrica ou intensidade de corrente I elétrica é encontrada medindo-se o volume ou quantidade total de carga elétrica Q que atravessa a secção transversal de um condutor por um tempo t. A expressão abaixo é a de cálculo da corrente elétrica:
+                        <math id="equation" xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <msemantics>
+                                <mrow><mi>I</mi><mspace></mspace><mo>=</mo><mspace></mspace>
+                                    <mfrac>
+                                        <mrow>&Delta;<mo>Q</mo></mrow>
+                                        <mrow>&Delta;<mo>t</mo></mrow>
+                                    </mfrac>
+                                    <mspace></mspace><mo>(A)</mo>
+                                </mrow>
+                            </msemantics>
+                        </math>
+                    </p>
+                    <p id="sheet01"><br><br><br></p>
+                    <h2>1.7.1 - Exercícios resolvidos:</h2>
+                    <p>
+                        &emsp;&emsp;1) Qual a corrente elétrica que surge em um fio, para uma carga de 250&micro;C medida em um período de tempo de aproximadamente 50 s?
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <msemantics>
+                                <mtable>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mi>I</mi><mspace></mspace><mo>=</mo><mspace></mspace>
+                                                <mfrac>
+                                                    <mrow>&Delta;<mo>Q</mo></mrow>
+                                                    <mrow>&Delta;<mo>t</mo></mrow>
+                                                </mfrac>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mi>I</mi><mspace></mspace><mo>=</mo><mspace></mspace>
+                                                <mfrac>
+                                                    <mrow><mn>250</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup></mrow>
+                                                    <mrow><mn>50</mn></mrow>
+                                                </mfrac>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow>
+                                                <mi>I</mi><mspace></mspace><mo>=</mo><mspace></mspace><mn>50</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup><mspace></mspace><mo>A</mo>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow>
+                                                <mi>I</mi><mspace></mspace><mo>=</mo><mspace></mspace><mn>50</mn><mspace></mspace><mo>&micro;A</mo>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                </mtable>
+                            </msemantics>
+                        </math>
+                    </p>
+                    <p>
+                        &emsp;&emsp;2) Qual a corrente elétrica que surge, em um condutor metálico, quando aplicamos uma carga de 980 μC durante período de tempo de aproximadamente 1000 s? E se o tempo fosse de 200 ms?
+                    </p>
+                    <p id="sheet01">
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>""<br>
+                    </p>
+                    <h1 id="h1_p">Apostila - Eletricidade Básica - José Antonio Sanches Lapaz</h1>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <msemantics>
+                                <mtable>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mi>I</mi><mspace></mspace><mo>=</mo><mspace></mspace>
+                                                <mfrac>
+                                                    <mrow>&Delta;<mo>Q</mo></mrow>
+                                                    <mrow>&Delta;<mo>t</mo></mrow>
+                                                </mfrac>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mi>I</mi><mspace></mspace><mo>=</mo><mspace></mspace>
+                                                <mfrac>
+                                                    <mrow><mn>980</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup></mrow>
+                                                    <mrow><mn>1000</mn></mrow>
+                                                </mfrac>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow>
+                                                <mi>I</mi><mspace></mspace><mo>=</mo><mspace></mspace><mn>980</mn><mo>x</mo><msup><mn>10</mn><mn>-9</mn></msup><mspace></mspace><mo>A</mo>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow>
+                                                <mi>I</mi><mspace></mspace><mo>=</mo><mspace></mspace><mn>980</mn><mspace></mspace><mo>nA</mo>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                </mtable>
+                            </msemantics>
+                        </math>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <msemantics>
+                                <mtable>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mi>I</mi><mspace></mspace><mo>=</mo><mspace></mspace>
+                                                <mfrac>
+                                                    <mrow>&Delta;<mo>Q</mo></mrow>
+                                                    <mrow>&Delta;<mo>t</mo></mrow>
+                                                </mfrac>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow><mi>I</mi><mspace></mspace><mo>=</mo><mspace></mspace>
+                                                <mfrac>
+                                                    <mrow><mn>980</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup></mrow>
+                                                    <mrow><mn>200</mn><mo>x</mo><msup><mn>10</mn><mn>-3</mn></msup></mrow>
+                                                </mfrac>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow>
+                                                <mi>I</mi><mspace></mspace><mo>=</mo><mspace></mspace><mn>4,9</mn><mo>x</mo><msup><mn>10</mn><mn>-3</mn></msup><mspace></mspace><mo>A</mo>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow>
+                                                <mi>I</mi><mspace></mspace><mo>=</mo><mspace></mspace><mn>4,9</mn><mspace></mspace><mo>mA</mo>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                </mtable>
+                            </msemantics>
+                        </math>
+                    <a href="#ginic" title="Cabeçalho da Página">Topo</a>
                 </section>
                 <section id="potencia">
-                    <h2>Potência Elétrica</h2>
-                    <a href="#ginic" title="Cabeçalho da Página">Cabeçalho</a>
+                    <p id="sheet01"><br><br><br></p>
+                    <h2>1.8 - Potência Elétrica</h2>
+                    <p>
+                        &emsp;&emsp;A potência elétrica é o trabalho realizado a uma velocidade que se mantém constante de uma carga elétrica, com relação a um fluxo de cargas durante um determinado período de tempo medido ou predefinido. Segundo a expressão abaixo podemos observar o cálculo da potência elétrica:
+                        <math id="equation" xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <msemantics>
+                                <mrow><mi>P</mi><mspace></mspace><mo>=</mo><mspace></mspace><mo>V</mo><mspace></mspace><mo>x</mo><mspace></mspace><mo>I</mo><mspace></mspace><mo>=</mo><mspace></mspace><mo>K</mo><mspace></mspace><mo>x</mo><mspace></mspace>
+                                    <mfrac>
+                                        <mrow><mo>Q</mo></mrow>
+                                        <mrow><mo>d</mo></mrow>
+                                    </mfrac>
+                                    <mspace></mspace><mo>x</mo><mspace></mspace>
+                                    <mfrac>
+                                        <mrow>&Delta;<mo>Q</mo></mrow>
+                                        <mrow>&Delta;<mo>t</mo></mrow>
+                                    </mfrac>
+                                    <mspace></mspace><mo>(W)</mo>
+                                </mrow>
+                            </msemantics>
+                        </math>
+                        Podemos observar o sistema de tensão, corrente e potência elétrica como se fosse um sistema mecânico hidráulico, como apresentado na figura abaixo.
+                    </p>
+                    <img src="img14.png" class="q3_img">
+                    <p id="sheet01">
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>""<br>
+                    </p>
+                    <h1 id="h1_p">Apostila - Eletricidade Básica - José Antonio Sanches Lapaz</h1>
+                    <p>
+                        &emsp;&emsp;1) Determine a potência elétrica de um sistema com tensão de -4,5 MV e corrente de -50&micro;A. Se ao invés da tensão e da corrente, tivessemo a carga de -250 &micro;C e um perído de medição de tempó de 50 segundos em um fio com comprimento de 500 mm, qual seria a corrente?
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <msemantics>
+                                <mtable>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow>
+                                                <mi>P</mi><mspace></mspace><mo>=</mo><mspace></mspace><mo>V</mo><mspace></mspace><mo>x</mo><mspace></mspace><mo>I</mo>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow>
+                                                <mi>P</mi><mspace></mspace><mo>=</mo><mspace></mspace><mn>-4,5</mn><mo>x</mo><msup><mn>10</mn><mn>6</mn></msup><mspace></mspace><mo>x</mo><mspace></mspace><mn>-50</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow>
+                                                <mi>P</mi><mspace></mspace><mo>=</mo><mspace></mspace><mn>225</mn><mo>W</mo>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                </mtable>
+                            </msemantics>
+                        </math>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <msemantics>
+                                <mtable>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow>
+                                                <mi>P</mi><mspace></mspace><mo>=</mo><mspace></mspace><mo>K</mo><mspace></mspace><mo>x</mo><mspace></mspace>
+                                                <mfrac>
+                                                    <mrow><mo>Q</mo></mrow>
+                                                    <mrow><mo>d</mo></mrow>
+                                                </mfrac>
+                                                <mspace></mspace><mo>x</mo><mspace></mspace>
+                                                <mfrac>
+                                                    <mrow>&Delta;<mo>Q</mo></mrow>
+                                                    <mrow>&Delta;<mo>t</mo></mrow>
+                                                </mfrac>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow>
+                                                <mi>P</mi><mspace></mspace><mo>=</mo><mspace></mspace><mn>9</mn><mo>x</mo><msup><mn>10</mn><mn>9</mn></msup><mspace></mspace><mo>x</mo><mspace></mspace>
+                                                <mfrac>
+                                                    <mrow><mn>-250</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup></mrow>
+                                                    <mrow><mn>50</mn><mo>x</mo><msup><mn>10</mn><mn>-3</mn></msup></mrow>
+                                                </mfrac>
+                                                <mspace></mspace><mo>x</mo><mspace></mspace>
+                                                <mfrac>
+                                                    <mrow><mn>-250</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup></mrow>
+                                                    <mrow><mn>50</mn></mrow>
+                                                </mfrac>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow>
+                                                <mi>P</mi><mspace></mspace><mo>=</mo><mspace></mspace><mn>9</mn><mo>x</mo><msup><mn>10</mn><mn>9</mn></msup><mspace></mspace><mo>x</mo><mspace></mspace><mn>-500</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup>
+                                                <mspace></mspace><mo>x</mo><mspace></mspace><mn>-50</mn><mo>x</mo><msup><mn>10</mn><mn>-6</mn></msup>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                    <mtr><mtd><mspace></mspace></mtd></mtr>
+                                    <mtr>
+                                        <mtd>
+                                            <mrow>
+                                                <mi>P</mi><mspace></mspace><mo>=</mo><mspace></mspace><mn>225</mn><mo>W</mo>
+                                            </mrow>
+                                        </mtd>
+                                    </mtr>
+                                </mtable>
+                            </msemantics>
+                        </math>
+                    </p>
+                    <a href="#ginic" title="Cabeçalho da Página">Topo</a>
+                </section>
+                <section id="energia">
+                    <p id="sheet01"><br><br><br></p>
+                    <h2>1.9 - Energia Elétrica</h2>
+                    <p>
+                        &emsp;&emsp;A energia elétrica é o quanto de esforço foi gasto para se realizar o trabalho em um determinado período de tempo. Segundo a expressão abaixo podemos observar o cálculo da energia elétrica:
+                        <math id="equation" xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <msemantics>
+                                <mrow><mi>W</mi><mspace></mspace><mo>=</mo><mspace></mspace><mo>P</mo><mspace></mspace><mo>x</mo><mspace></mspace><mo>t</mo><mspace></mspace><mo>=</mo><mspace></mspace><mo>K</mo><mspace></mspace><mo>x</mo><mspace></mspace>
+                                    <mfrac>
+                                        <mrow><mo>Q</mo></mrow>
+                                        <mrow><mo>d</mo></mrow>
+                                    </mfrac>
+                                    <mspace></mspace><mo>x</mo><mspace></mspace>
+                                    <mfrac>
+                                        <mrow>&Delta;<mo>Q</mo></mrow>
+                                        <mrow>&Delta;<mo>t</mo></mrow>
+                                    </mfrac>
+                                    <mspace></mspace><mo>x</mo><mspace></mspace><mo>t</mo><mspace></mspace><mo>(J)</mo>
+                                </mrow>
+                            </msemantics>
+                        </math>
+                        Mas a energia elétrica que consumimos na residência, comércio e indústria e apresentada em kWxh, ou seja, uma outra maneira de se observar a energia em Joule. Assim temos:
+                        <math id="equation" xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <msemantics>
+                                <mrow>
+                                    <mi>W</mi><mspace></mspace><mo>=</mo><mspace></mspace><mo>P</mo><mspace></mspace><mo>x</mo><mspace></mspace><mo>t</mo><mspace></mspace><mo>(kWh)</mo>
+                                </mrow>
+                            </msemantics>
+                        </math>
+                    </p>
+                    <a href="#ginic" title="Cabeçalho da Página">Topo</a>
+                </section>
+                <section id="exercicio">
+                    <p id="sheet01">
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>""<br>
+                    </p>
+                    <h1 id="h1_p">Apostila - Eletricidade Básica - José Antonio Sanches Lapaz</h1>
+                    <h2>2 - Exercícios</h2>
+                    <p id="sheet01"><br><br><br></p>
+                    <h3 id="question" >Átomo</h3>
+                    <table id="p_question">
+                        <tr><td>1) Em que nos auxilia o estudo dos átomos na eletrônica?</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <table id="p_question">
+                        <tr><td>2) Qual a importância dos elétrons para a eletrônica?</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <table id="p_question">
+                        <tr><td>3) Por que o próton não pode ser usado como elemento de controle eletrônico?</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <table id="p_question">
+                        <tr><td>4) Quais a cargas do elétron, do próton e do nêutron? A massa dos três elementos são iguais? Se não diga a diferença entre cada um.</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <table id="p_question">
+                        <tr><td>5) Quais os tipos de ligações químicas?</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <table id="p_question">
+                        <tr><td>6) O que diz a teoria da nuvem eletrônica?</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <p id="sheet01"><br><br><br></p>
+                    <h3 id="question" >Carga Elétrica</h3>
+                    <table id="p_question">
+                        <tr><td>1) A carga elétrica de um elétron vale 1,6x10-19 C. Qual a quantidade de elétrons presentes em um coulomb?</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <table id="p_question">
+                        <tr><td>
+                        2) A carga elétrica do elétron e do próton tem o mesmo valor? Explique a sua resposta.</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <p id="sheet01"><br><br><br><br><br><br><br><br>""<br></p>
+                    <h1 id="h1_p">Apostila - Eletricidade Básica - José Antonio Sanches Lapaz</h1>
+                    <table id="p_question">
+                        <tr><td>3) Calcule a quantidade de elétrons a ser retirada de um corpo neutro para que o mesmo, depois possua uma carga de 154 μC.</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <table id="p_question">
+                        <tr><td>4) Calcule a carga elétrica de 10.000 elétrons?</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <p id="sheet01"><br><br><br></p>
+                    <h3 id="question" >Força Elétrica</h3>
+                    <table id="p_question">
+                        <tr><td>1) Duas cargas postas a uma distância de 50mm uma da outra e com um valor de intensidade de Q<sub>1</sub> = 150 μC e Q<sub>2</sub> = -200 μC. Defina o valor da intensidade de força elétrica do sistema, e se a força presente entre as cargas é de atração ou repulsão.</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <table id="p_question">
+                        <tr><td>2) Duas cargas postas a uma distância de 300mm uma da outra e com um valor de intensidade de Q<sub>1</sub> = 100 μC e Q<sub>2</sub> = 50 nC. Defina o valor da intensidade de força elétrica do sistema, e se a força presente entre as cargas é de atração ou repulsão.</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <table id="p_question">
+                        <tr><td>3) Duas cargas postas a uma distância de 400mm uma da outra e com um valor de intensidade de Q<sub>1</sub> = 160 nC e Q<sub>2</sub> = 70 pC. Defina o valor da intensidade de força elétrica do sistema, e se a força presente entre as cargas é de atração ou repulsão.
+                    </td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <p id="sheet01"><br><br><br></p>
+                    <h3 id="question" >Campo Elétrico</h3>
+                    <table id="p_question">
+                        <tr><td>1) O que é campo elétrico?</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <table id="p_question">
+                        <tr><td>2) Duas cargas postas a uma distância de 50mm uma da outra e com um valor de intensidade de Q<sub>1</sub> = 150 μC e Q<sub>2</sub> = -200 μC. Defina o valor do campo elétrico que a carga Q<sub>1</sub> impõe sobre a carga Q<sub>2</sub>.</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <p id="sheet01"><br><br><br><br><br>""<br></p>
+                    <h1 id="h1_p">Apostila - Eletricidade Básica - José Antonio Sanches Lapaz</h1>
+                    <table id="p_question">
+                        <tr><td>3) Duas cargas postas a uma distância de 300mm uma da outra e com um valor de intensidade de Q<sub>1</sub> = 200 nC e Q<sub>2</sub> = 600 μC. Defina o valor do campo elétrico que a carga Q<sub>1</sub> impõe sobre a carga Q<sub>2</sub>.</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <p id="sheet01"><br><br><br></p>
+                    <h3 id="question" >Tensão Elétrica</h3>
+                    <table id="p_question">
+                        <tr><td>1) Qual a definição de potencial elétrico? Explique.</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <table id="p_question">
+                        <tr><td>2) Calcule o valor da diferença de potencial de uma carga, de -50 μC, posicionada a uma distância de 50 mm de um campo elétrico aplicado a um fio de cobre.</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <p id="sheet01"><br><br><br></p>
+                    <h3 id="question" >Corrente Elétrica</h3>
+                    <table id="p_question">
+                        <tr><td>1) Qual a definição de intensidade de corrente? Explique.</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <table id="p_question">
+                        <tr><td>2) Qual a corrente elétrica que surge no problema anterior para um período de tempo de aproximadamente 20 s?</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <p id="sheet01"><br><br><br></p>
+                    <h3 id="question" >Potência Elétrica</h3>
+                    <table id="p_question">
+                        <tr><td>1) Qual a definição de potência elétrica? Explique.</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <table id="p_question">
+                        <tr><td>2) Determine a potência elétrica do sistema apresentado nas questões anteriores.</td></tr>
+                        <tr><td><input type="text" class="box_input"/><br></td></tr>
+                    </table>
+                    <a href="#ginic" title="Cabeçalho da Página">Topo</a>
                 </section>
             </article>
             <!-- <aside></aside> -->
         </div>
         <!-- Rodapé -->
         <footer>
+            <script src="main.js"></script>
             <a href = "https://sancheslapaz.github.io/tecnico/basica.html" title="Página Anterior">Retornar </a>
         </footer>
     </body>

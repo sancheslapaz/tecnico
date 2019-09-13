@@ -1,4 +1,4 @@
-/*@charset "UTF-8";*/
+@charset "UTF-8";
 /********************************************************************
  *****  CSS Documents                                           *****
  ********************************************************************
@@ -20,7 +20,7 @@
 /************************
  ***** Neutralidade *****
  ************************/
-h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, html, body, header, nav, div, article, section, aside, footer{
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, html, tr, th, td, table, body, header, nav, div, article, section, aside, footer, button, input, math, mtr, mth, mtd, mrow, mtable, mfenced, msemantic, print{
   margin: 0;
   padding: 0;
 }
@@ -34,7 +34,7 @@ html, body{
 body{
     width: 100%;
     height: 100%;
-    background-color: lightgray;
+    background-color: lightgoldenrodyellow;
 }
 header{
     width: 90%;
@@ -43,7 +43,6 @@ header{
     padding: 2px 0 0 0;
     text-align: center;
     color: lightsteelblue;
-    /*background-color: aquamarine;*/
 }
 nav{
     margin: 5px 0 0 0;
@@ -56,45 +55,43 @@ div{
     width: 90%;
     min-height: 65%;
     margin: 0 auto;
-    /*background-color: brown;*/
 }
+/*article{
+    width: 90%;
+    min-height: 65%;
+    margin: 0 auto;
+}*/
 footer{
     width: 90%;
     min-height: 4%;
     margin: 0 auto;
-    /*background-color: burlywood;*/
 }
 /****************************************************
- *****  Estrutura das DIV's do corpo da pagina  *****
+ *****  Estrutura das id's do corpo da pagina   *****
  ****************************************************/
 #wrapper{
     width: 90%;
     min-height: 65%;
     margin: 0 auto;
 }
-#carga{
+#atomo, #carga, #forca, #campo, #tensao, #corrente, #potencia, #energia, #exercicio{
     min-height: 25%;
-    /*background-color: lightblue;*/
 }
-#forca{
-    min-height: 25%;
-    /*background-color: lightcoral;*/
+#question{
+    margin: 1px 0 0 8px;
+    padding: 0 0 0 16px;
 }
-#campo{
-    min-height: 25%;
-    /*background-color: lightcyan;*/
+#p_question{
+    margin: 1px 0 0 8px;
+    padding: 0 0 0 40px;
 }
-#tensao{
-    min-height: 25%;
-    /*background-color: lightblue;*/
+#h1_p, #sheet01{
+    visibility: hidden;
+    font-size: 0;
 }
-#corrente{
-    min-height: 25%;
-    /*background-color: lightcoral;*/
-}
-#potencia{
-    min-height: 25%;
-    /*background-color: lightcyan;*/
+#equation{
+    font-size: 150%;
+    margin: 10px 25%;
 }
 /**************************************
  ***** TAG de Estrutura de texto  *****
@@ -106,12 +103,16 @@ h1{
     text-shadow: 0.05em 0.05em 0.05em #000000;
 }
 h2{
+	margin: 4px 0 0 0;
+    font-size: 1.2em;
+}
+h3{
     font-size: 1em;
 }
 p{
-    padding: 0 16px;
+    margin: 2px auto;
     font-size: 1em;
-    text-align: left;
+    text-align: justify;
 }
 a:link{
     color:darkblue;
@@ -123,19 +124,63 @@ a:hover{
     color:darkgrey;
     text-decoration:underline;
 }
+a{
+    padding: 0 16px;
+    font-size: 1.2em;
+    font-style: italic;
+    text-decoration: none;
+    text-shadow: 0.09em 0.09em 0.09em #1289FF;
+}
+/******************************************
+ ***** TAG de Estrutura de matemática *****
+ ******************************************/
+math{
+    font-size: 100%;
+    border-style: solid;
+	border-color: darkblue;
+	border-width: 2px;
+	margin: 10px 35%;
+    background-color: #FFFFFF;
+}
+/**************************************
+ ***** TAG de Estrutura de imagem *****
+ **************************************/
+img{
+	max-width: 60%;
+	border-style: solid;
+	border-color: darkblue;
+	border-width: 2px;
+    margin: 2px 20%;
+}
+/**************************************
+ ***** Estrutura de classes       *****
+ **************************************/
+.q1_img{
+    max-width: 15%;
+    margin: 2px 42%;
+}
+.q2_img{
+    max-width: 30%;
+    margin: 2px 35%;
+}
+.q3_img{
+    max-width: 50%;
+    margin: 2px 25%;
+}
+.q4_img{
+    margin: 2px 23%;
+}
+.box_input{
+    min-width: 500px;
+    min-height: 60px;
+    text-align: justify;
+}
 
 /********************************************
  ***** Monitor de computador e Notebook *****
  *****            Horizintal            *****
  ********************************************/
-@media only screen and (min-width: 1097px){
-    a{
-        padding: 0 32px;
-        font-size: 1.2em;
-        font-style: italic;
-        text-decoration: none;
-        text-shadow: 0.09em 0.09em 0.09em #1289FF;
-    }
+@media only screen and (min-width: 1040px){
 }
 /********************************************
  *****              Fim                 *****
@@ -145,13 +190,15 @@ a:hover{
  *****          Monitor Celular         *****
  *****          Horizintal              *****
  ********************************************/
-@media only screen and (min-width:986px) and (max-width:1096px){
+@media only screen and (min-width:930px) and (max-width:1039px){
+/**************************************
+ ***** TAG de Estrutura de texto  *****
+ **************************************/
+    h1{
+        font-size: 1.8em; 
+    }
     a{
-        padding: 0 21px;
-        font-size: 1.2em;
-        font-style: italic;
-        text-decoration: none;
-        text-shadow: 0.09em 0.09em 0.09em #1289FF;
+        font-size: 1em;
     }
 }
 /********************************************
@@ -162,13 +209,12 @@ a:hover{
  *****          Monitor Tablet          *****
  *****          Horizintal              *****
  ********************************************/
-@media only screen and (min-width: 875px) and (max-width:985px){
+@media only screen and (min-width: 840px) and (max-width:929px){
+    h1{
+        font-size: 1.6em; 
+    }
     a{
-        padding: 0 11px;
-        font-size: 1.2em;
-        font-style: italic;
-        text-decoration: none;
-        text-shadow: 0.09em 0.09em 0.09em #1289FF;
+        font-size: 0.8em;
     }
 }
 /********************************************
@@ -177,15 +223,14 @@ a:hover{
 
 /********************************************
  ***** Monitor de computador e Notebook *****
- *****             Vertical             *****
  ********************************************/
-@media only screen and (min-width: 754px) and (max-width: 874px){
+@media only screen and (min-width: 750px) and (max-width: 839px){
+    h1{
+        font-size: 1.4em; 
+    }
     a{
-        padding: 0 11px;
-        font-size: 1.0em;
-        font-style: italic;
-        text-decoration: none;
-        text-shadow: 0.09em 0.09em 0.09em #1289FF;
+        padding: 0 10px;
+        font-size: 0.8em;
     }
 }
 /********************************************
@@ -196,10 +241,47 @@ a:hover{
  *****          Monitor Celular         *****
  *****             Vertical             *****
  ********************************************/
-@media only screen and (min-width: 632px) and (max-width: 753px){
+@media only screen and (min-width: 630px) and (max-width: 749px){
+    h1{
+        font-size: 1.2em; 
+    }
     a{
-        padding: 0 11px;
+        padding: 0 6px;
         font-size: 0.8em;
+    }
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ *****           Monitor Tablet         *****
+ *****             Vertical             *****
+ ********************************************/
+@media only screen and (min-width: 520px) and (max-width: 629px){
+    h1{
+        font-size: 1em; 
+    }
+    a{
+        padding: 0 6px;
+        font-size: 0.6em;
+    }
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ *****           Monitor Tablet         *****
+ *****             Vertical             *****
+ ********************************************/
+@media only screen and (min-width: 420px) and (max-width: 519px){
+    h1{
+        font-size: 0.8em; 
+    }
+    a{
+        padding: 0 6px;
+        font-size: 0.4em;
         font-style: italic;
         text-decoration: none;
         text-shadow: 0.09em 0.09em 0.09em #1289FF;
@@ -213,10 +295,13 @@ a:hover{
  *****           Monitor Tablet         *****
  *****             Vertical             *****
  ********************************************/
-@media only screen and (max-width: 631px){
+@media only screen and (min-width: 320px) and (max-width: 419px){
+    h1{
+        font-size: 0.6em; 
+    }
     a{
-        padding: 0 5px;
-        font-size: 0.8em;
+        padding: 0 2px;
+        font-size: 0.4em;
         font-style: italic;
         text-decoration: none;
         text-shadow: 0.09em 0.09em 0.09em #1289FF;
@@ -226,3 +311,141 @@ a:hover{
  *****              Fim                 *****
  ********************************************/
 
+/********************************************
+ *****           Monitor Tablet         *****
+ *****             Vertical             *****
+ ********************************************/
+@media only screen and (max-width: 319px){
+    h1{
+        font-size: 0.4em; 
+    }
+    a{
+        padding: 0 1px;
+        font-size: 0.2em;
+    }
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ *****            Impressora            *****
+ *****             Folha A4             *****
+ ********************************************/
+@media only print{
+	@page{
+        margin: 0cm 2cm 2cm 3cm;
+    }
+    /**********************************************
+     ***** TAG de Section estrutura da página *****
+     **********************************************/
+	body{
+		background-color: #FFFFFF;
+	}
+    div{
+        width: auto;
+        height: auto;
+    }
+    nav, footer, header{
+        display: none;
+    }
+    math{
+   	margin: 10px 30%;
+}
+    /**************************************
+     ***** TAG de Estrutura de texto  *****
+     **************************************/
+    h2{
+        font-size: 1em;
+    }
+    a:link, a:visited, a:hover{
+		display: none;
+	}
+    /*************************************************
+     ***** Estrutura das id's do corpo da pagina *****
+     *************************************************/
+    #wrapper{
+        width: 99.9%;
+        height: auto;
+		/*border-style: solid;
+		border-width: 1px;
+		border-color: red;*/
+        text-align: justify;
+    }
+    #h1_p{
+        visibility: visible;
+        font-size: 1em;
+        text-shadow: none;
+        text-align: center;
+        margin: 1.25cm auto 1.5cm auto;
+    }
+    #sheet01{
+        font-size: 0.1em;
+        visibility: visible;
+        color: #FFFFFF;
+    }
+    #equation{
+    font-size: 100%;
+    margin: 5px 20%;
+}
+	/**************************************
+	 ***** TAG de Estrutura de imagem *****
+	 **************************************/
+	img{
+		min-width: 60%;
+		min-height: 60%;
+		margin: 10px 19.5%;
+		border-width: 1px;
+		border-style: solid;
+		border-color: blue;
+	}
+	hr{
+		display: none;
+	}
+	/**************************************
+	 ***** TAG de Estrutura de tabela *****
+	 **************************************/
+	table{
+		min-width: 50%;
+		min-height: 50%;
+		margin: 15px auto;
+		background-color: #FFFFFF;
+	}
+    mtable{
+        margin: 20px auto;
+    }
+    mtr{
+        border-width: 5px;
+        border-style: solid;
+    }
+    mtd{
+        font-size: 0.75em;
+    }
+	/**************************************
+	 ***** TAG de Estrutura de box    *****
+	 **************************************/
+	
+	/**************************************
+	 *****     Classe de estrutura    *****
+	 **************************************/
+    .q1_img{
+        min-width: 15%;
+        margin: 2px 42%;
+    }
+    .q2_img{
+        min-width: 30%;
+        margin: 2px 35%;
+    }
+    .q3_img{
+        min-width: 50%;
+        margin: 2px 25%;
+    }
+    .q4_img{
+        min-width: 40%;
+        min-height: 40%
+        margin: 2px 15.5%;
+    }
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
