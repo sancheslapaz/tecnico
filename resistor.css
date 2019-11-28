@@ -1,4 +1,4 @@
-/*@charset "UTF-8";*/
+@charset "UTF-8";
 /********************************************************************
  *****  CSS Documents                                           *****
  ********************************************************************
@@ -20,7 +20,7 @@
 /************************
  ***** Neutralidade *****
  ************************/
-h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, html, body, header, nav, div, article, section, aside, footer{
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, html, tr, th, td, table, body, header, nav, div, article, section, aside, footer, button, input, math, mtr, mth, mtd, mrow, mtable, mfenced, msemantic, print{
   margin: 0;
   padding: 0;
 }
@@ -34,7 +34,7 @@ html, body{
 body{
     width: 100%;
     height: 100%;
-    background-color: lightgray;
+    background-color: snow;
 }
 header{
     width: 90%;
@@ -43,7 +43,6 @@ header{
     padding: 2px 0 0 0;
     text-align: center;
     color: lightsteelblue;
-    /*background-color: aquamarine;*/
 }
 /*nav{
     margin: 5px 0 0 0;
@@ -56,48 +55,95 @@ div{
     width: 90%;
     min-height: 65%;
     margin: 0 auto;
-    /*background-color: brown;*/
+}
+section{
+    width: 95%;
+    min-height: 65%;
+    margin: 0 auto;
 }
 footer{
     width: 90%;
     min-height: 4%;
     margin: 0 auto;
-    /*background-color: burlywood;*/
+}
+math{
+    margin: 0 30%;
+    font-size: 1.2em;
+    background-color: lightgreen;
+}
+table{
+    margin: 5px auto;
+    background-color: wheat;
+}
+img{
+    margin: 5px 26.5%;
+    max-width: 50%;
+    max-height: 50%;
+}
+img, math, table{
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px;
 }
 /****************************************************
- *****  Estrutura das DIV's do corpo da pagina  *****
+ *****  Estrutura das id's do corpo da pagina  *****
  ****************************************************/
-#wrapper{
-    width: 90%;
-    min-height: 65%;
-    margin: 0 auto;
+#espaco{
+    margin: 0 0 0 7%;
 }
-#tecnico{
-    min-height: 25%;
-    /*background-color: lightblue;*/
+#tab_01{
+    width: 32%;
 }
-#engenharia{
-    min-height: 25%;
-    /*background-color: lightcoral;*/
+#tab_02{
+    width: 70%;
 }
-#matematica{
-    min-height: 25%;
-    /*background-color: lightcyan;*/
+#tab_03{
+    width: 50%;
+}
+#img_18{
+    margin: 2px 470px;
+}
+#img_22{
+    margin: 2px 345px;
+}
+#img_24{
+    margin: 2px 390px;
+}
+#img_25{
+    margin: 2px 450px;
+}
+#mar_pot{
+    margin: 2px 60px;
+}
+#linha_2{
+    margin: 0 30px
+}
+#linha_3{
+    margin: 0 30px
 }
 /**************************************
  ***** TAG de Estrutura de texto  *****
  **************************************/
 h1{
+    margin: 2.5px auto;
     font-size: 2em;
     font-family: "Times New Roman";
     font-style: italic;
     text-shadow: 0.05em 0.05em 0.05em #000000;
 }
-/*p{
-    padding: 2px;
-    font-size: 0.8em;
+h2{
+    margin: 2.5px auto;
+    font-size: 1em;
+}
+p{}
+ul, ol{}
+li{
+    margin: 0 0 0 5%;
+}
+td{
+    /*width: 30%;*/
     text-align: center;
-}*/
+}
 a:link{
     color:darkblue;
 }
@@ -107,6 +153,55 @@ a:visited{
 a:hover{
     color:darkgrey;
     text-decoration:underline;
+}
+p, ul, ol, li{
+    padding: 2px;
+    font-size: 1em;
+    text-align: justify;
+}
+
+/*************************************************************************
+ ***** TAG de "id" Estrutura de cores da tabela do código de corres  *****
+ *************************************************************************/
+#C_prata{
+    background-color: silver;
+}
+#C_ouro{
+    background-color: gold;
+}
+#C_preto{
+    background-color: black;
+    color: white;
+}
+#C_marrom{
+    background-color: brown;
+    color: white;
+}
+#C_vermelho{
+    background-color: red;
+}
+#C_laranja{
+    background-color: orange;
+}
+#C_amarelo{
+    background-color: yellow;
+}
+#C_verde{
+    background-color: green;
+    color: white;
+}
+#C_azul{
+    background-color: blue;
+    color: white;
+}
+#C_violeta{
+    background-color: violet;
+}
+#C_cinza{
+    background-color: gray;
+}
+#C_branco{
+    background-color: white;
 }
 
 /********************************************
